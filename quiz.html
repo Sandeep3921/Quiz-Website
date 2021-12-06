@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.style.css">
+    <title>Quiz.js</title>
+    <link rel = "icon" href = "images/logo.png">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <a class="start_btn" onclick="startbtn()">Start Quiz</a>
+    <a class="bth1" href="index.html">Back to Home</a>
+    
+    <!-- Info Box -->
+    <div class="instructions"> 
+        <div class="insttitle">Instructions for Quiz</div>
+        <hr>
+        <div class="instlist">        
+            <p class="insttext">1. You will have only <b style="color:red;">15 seconds</b> to answer eatch question.</p>
+            <p class="insttext">2. Once you select your answer, it can't be undone.</p>
+            <p class="insttext">3. You can't select any option once time goes off.</p>
+            <p class="insttext">4. You can't exit from the Quiz while you're playing.</p>
+            <p class="insttext">5. You'll get points on the basis of your correct answers.</p>
+            <p class="insttext">6. Please select any one of the <b style="color:red;">topics</b>, after pressing continue.</p>
+        </div>
+        <hr>
+        <div class="instbtn">
+            <button class="instbtn1">BACK TO HOME</button>
+            <button class="instbtn2">CONTINUE</button>
+        </div>
+    </div>
+
+    <!-- Choose Topics Box -->
+    <div class="topiccointaner">
+        <div class="topictitle">CHOOSE ANY ONE OF YOUR DESIRED TOPIC.</div>
+        <hr>
+        <div class="choice">
+            <button class="clang">C-Language</button>
+            <button class="py">Python</button>
+            <button class="ds">Data Structures</button>
+        </div>
+        <div class="choice"></a>
+            <button class="dbms">DBMS</button>
+            <button class="html">HTML</button>
+            <button class="js">Java Script</button>
+        </div>
+        <div class="choice">
+            <button class="os">Operating System</button>
+            <button class="daa">DAA</button>
+            <button class="java">JAVA</button>
+        </div>
+        <hr>
+        <div class="topicbtn">
+            <a class="topicbtn1"><button>BACK TO HOME</button></a>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn1">Next Question</button>
+            <button class="next_btn2">Next Question</button>
+            <button class="next_btn3">Next Question</button>
+            <button class="next_btn4">Next Question</button>
+            <button class="next_btn5">Next Question</button>
+            <button class="next_btn6">Next Question</button>
+            <button class="next_btn7">Next Question</button>
+            <button class="next_btn8">Next Question</button>
+            <button class="next_btn9">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="resultbtn">
+            <button class="resultquit" onclick="location.href='index.html'">Quit To Home</button>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
